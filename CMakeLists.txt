@@ -6,5 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(04_Calendrier main.cpp
         isALapYear.cpp
         isALapYear.h
-        displayDaysOfAYear.cpp
-        displayDaysOfAYear.h)
+        displayDaysOfAMonth.cpp
+        displayDaysOfAMonth.h
+        lastDayOfWeekOfMonth.cpp
+        lastDayOfWeekOfMonth.h)

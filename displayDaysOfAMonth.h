@@ -6,6 +6,6 @@
 #define INC_04_CALENDRIER_DISPLAYDAYSOFAYEAR_H
 
 
-void displayDaysOfAMonth(int year, int month);
+void displayDaysOfAMonth(int year, int month, int firstDay);
 
 #endif //INC_04_CALENDRIER_DISPLAYDAYSOFAYEAR_H

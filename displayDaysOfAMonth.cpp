@@ -2,15 +2,16 @@
 // Created by m01 on 28/10/2026.
 //
 
-#include "displayDaysOfAYear.h"
+#include "displayDaysOfAMonth.h"
 
 #include <iomanip>
 #include <iostream>
 #include "isALapYear.h"
+#include "lastDayOfWeekOfMonth.h"
 
 using namespace std;
 
-void displayDaysOfAMonth(int year, int month) {
+void displayDaysOfAMonth(int year, int month, int firstDay) {
     switch (month) {
         case 1: cout << "janvier "; break;
         case 2: cout << "fevrier "; break;
@@ -43,10 +44,10 @@ void displayDaysOfAMonth(int year, int month) {
     cout << setw(2) << "L" << setw(3) << "M" << setw(3) << "M" << setw(3) << "J" << setw(3) << "V" << setw(3) << "S" << setw(3) << "D" << endl;
 
     const int n_col = 7;
-    int current_col = 0;
+    int current_col = firstDay - 1;
 
     for (int i = 1; i <= max_days; i++) {
-        cout << setw(current_col == 0 ? 2 : 3) << i;
+        cout << setw(i == 1 ? 2 + ((current_col) * 3) :current_col == 0 ? 2 : 3) << i;
         current_col++;
         if (current_col == n_col) {
             current_col = 0;

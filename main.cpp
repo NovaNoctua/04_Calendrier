@@ -4,7 +4,8 @@
 #include <limits>
 #include <cmath>
 
-#include "displayDaysOfAYear.h"
+#include "displayDaysOfAMonth.h"
+#include "lastDayOfWeekOfMonth.h"
 
 using namespace std;
 
@@ -27,8 +28,15 @@ int main() {
 
     } while (!cin || user_year > max_year || user_year < min_year);
 
+    int firstDay = 1;
+
     for (int i = 1; i <= 12; i++) {
-        displayDaysOfAMonth(user_year, i);
+        if (i != 1) {
+            firstDay = lastDayOfWeekOfMonth(user_year, i - 1, firstDay) + 1;
+            if (firstDay > 7) firstDay = 1;
+        }
+
+        displayDaysOfAMonth(user_year, i, firstDay);
         cout << endl;
     }
 
