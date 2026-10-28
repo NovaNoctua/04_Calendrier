@@ -54,14 +54,14 @@ le programme est termine
 - En cas de saisie incorrecte, l’utilisateur est invité à recommencer sa saisie.
 - Une année est bissextile si elle est divisible par 400, ou par 4 et pas par 100.
 - Un menu « voulez-vous recommencer [O/N] » permet de quitter ou recommencer l’opération.
-- Tous les « 1 janvier » sont des lundis … à moins que vous ayiez envie de faire mieux.
+- Tous les « 1 janvier » sont des lundis … à moins que vous ayez envie de faire mieux.
   <br>La librairie [ctime](http://www.cplusplus.com/reference/ctime) peut vous aider 😉.
 - Soigner particulièrement la présentation du code.
 - Les erreurs de saisie ne sont pas à gérer.
-- Les fonctions seront disposées dans une ou plusieurs librairies (fichiers externes9.
+- Les fonctions seront disposées dans une ou plusieurs librairies (fichiers externes).
 
 ### Modalités
-- groupe de **1 étudiants**
+- groupe de **1 étudiant**
 - 4 périodes
 
 ---

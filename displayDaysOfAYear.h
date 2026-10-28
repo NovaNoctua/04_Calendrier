@@ -1,0 +1,11 @@
+//
+// Created by m01 on 28/10/2026.
+//
+
+#ifndef INC_04_CALENDRIER_DISPLAYDAYSOFAYEAR_H
+#define INC_04_CALENDRIER_DISPLAYDAYSOFAYEAR_H
+
+
+void displayDaysOfAMonth(int year, int month);
+
+#endif //INC_04_CALENDRIER_DISPLAYDAYSOFAYEAR_H
